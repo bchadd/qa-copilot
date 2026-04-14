@@ -28,7 +28,7 @@ export function resolveLocalImports(
   const result: Record<string, string> = {};
 
   function walk(filePath: string, depth: number): void {
-    if (depth > MAX_DEPTH) return;
+    if (depth >= MAX_DEPTH) return;
     if (visited.has(filePath)) return;
     visited.add(filePath);
 

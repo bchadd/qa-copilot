@@ -9,9 +9,17 @@
   "scripts": {
     "build": "tsup",
     "dev": "ts-node src/cli/index.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
-  "keywords": ["playwright", "testing", "ai", "copilot", "cli"],
+  "keywords": [
+    "playwright",
+    "testing",
+    "ai",
+    "copilot",
+    "cli"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -28,6 +36,7 @@
     "@types/node": "^25.6.0",
     "ts-node": "^10.9.2",
     "tsup": "^8.5.1",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.2",
+    "vitest": "^3.2.4"
   }
 }
